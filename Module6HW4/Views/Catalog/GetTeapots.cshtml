@@ -1,0 +1,15 @@
+﻿@model List<Teapot>
+
+@{
+    ViewBag.Title = "Catalog";
+}
+
+<div>
+    <div class="fs-2 text-center mb-2">Catalog</div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var product in Model)
+        {
+            @await Html.PartialAsync("_CatalogItem", product);
+        }
+    </div>
+</div>

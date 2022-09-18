@@ -1,0 +1,105 @@
+﻿@model Teapot
+
+@{
+    ViewBag.Title = "Changing product";
+}
+
+<div>
+            <div class="fs-2 text-center mb-2">Changing product</div>
+            <form method="post">
+                <input
+                        type="hidden"
+                        class="form-control"
+                        name="id"
+                        value=@Model.Id
+                    />
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Title</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="title"
+                        required
+                        value="@Model.Title"
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Price</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="price"
+                        required
+                        value="@Model.Price"
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Quantity</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="quantity"
+                        required
+                        value="@Model.Quantity"
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">
+                        Manufacturer country
+                    </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="manufacturerCountry"
+                        required
+                        value="@Model.ManufacturerCountry"
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Warranty</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="warrantyInMonths"
+                        required
+                        value="@Model.WarrantyInMonths"
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Capacity</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="capacity"
+                        required
+                        value="@Model.Capacity"
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Description</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="description"
+                        required
+                        value="@Model.Description"
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Img url</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="imgUrl"
+                        required
+                        value="@Model.ImgUrl"
+                    />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Save changes
+                    </button>
+                </div>
+            </form>
+</div>

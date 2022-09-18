@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Adding product";
+}
+
+<div>
+            <div class="fs-2 text-center mb-2">Adding product</div>
+            <form method="post">
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Title</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="title"
+                        required
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Price</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="price"
+                        required
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Quantity</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="quantity"
+                        required
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">
+                        Manufacturer country
+                    </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="manufacturerCountry"
+                        required
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Warranty</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="warrantyInMonths"
+                        required
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Capacity</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="capacity"
+                        required
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Description</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="description"
+                        required
+                    />
+                </div>
+                <div class="mb-3 w-50 mx-auto">
+                    <label class="form-label fs-4">Img url</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="imgUrl"
+                        required
+                    />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Save changes
+                    </button>
+                </div>
+            </form>
+        </div>
