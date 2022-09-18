@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module6HW6.WebApi", "Module6HW5\Module6HW6.WebApi.csproj", "{DB6046F6-7D54-4509-B13C-1EEC1B53788A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module6HW6.WebApi", "Module6HW6.WebApi\Module6HW6.WebApi.csproj", "{DB6046F6-7D54-4509-B13C-1EEC1B53788A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module6HW6.MVC", "Module6HW4\Module6HW6.MVC.csproj", "{A3546AE1-4E86-4620-A794-34ED3E14249D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module6HW6.MVC", "Module6HW6.MVC\Module6HW6.MVC.csproj", "{A3546AE1-4E86-4620-A794-34ED3E14249D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module6HW6.IdentityServer4", "Module6HW6.IdentityServer4\Module6HW6.IdentityServer4.csproj", "{870C4E31-FD7F-42E3-8713-BD2135EFD7DF}"
 EndProject
