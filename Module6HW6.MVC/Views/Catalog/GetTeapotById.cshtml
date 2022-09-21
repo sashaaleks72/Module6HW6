@@ -1,0 +1,55 @@
+﻿@model Teapot
+
+@{
+    ViewBag.Title = "About product";
+}
+
+<div>
+            <div class="fs-2 text-center mb-2">Product description</div>
+            <div class="fs-4 mb-2">
+                <b>Title: </b>
+                @Model.Title
+            </div>
+            <div class="fs-4 mb-2">
+                <b>Price: </b>
+                @Model.Price UAH
+            </div>
+            <div class="fs-4 mb-2">
+                <b>Quantity: </b>
+                @Model.Quantity
+            </div>
+            <div class="fs-4 mb-2">
+                <b>Manufacturer country: </b>
+                @Model.ManufacturerCountry
+            </div>
+            <div class="fs-4 mb-2">
+                <b>Warranty: </b>
+                @Model.WarrantyInMonths months
+            </div>
+            <div class="fs-4 mb-2">
+                <b>Capacity: </b>
+                @Model.Capacity l
+            </div>
+            <div class="fs-4 mb-4">
+                <b>Description: </b>
+                @Model.Description
+            </div>
+            <div class="text-center mb-4">
+                <img src=@Model.ImgUrl alt="product" />
+            </div>
+            <div class="text-center">
+                <div
+                    class="btn btn-primary"
+                >
+                    Add to cart
+                </div>
+                <a asp-controller="Catalog" asp-action="DeleteTeapotById" asp-route-id="@Model.Id"
+                    class="btn btn-danger ms-2"
+                >
+                    X
+                </a>
+            </div>
+                <div class="text-end">
+                    <a asp-controller="Catalog" asp-action="GetTeapots" >Go to catalog</a>
+                </div>
+        </div>

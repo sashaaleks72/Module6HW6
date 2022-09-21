@@ -1,0 +1,33 @@
+﻿@model Teapot
+
+<div class="col-4">
+            <div class="card">
+                    <div class="text-end">
+                        <a asp-controller="Catalog" asp-action="EditTeapotById" asp-route-id="@Model.Id">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/2356/2356780.png"
+                                alt="edit"
+                                width="35"
+                            />
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a asp-controller="Catalog" asp-action="GetTeapotById" asp-route-id="@Model.Id">
+                            <img
+                                src="@Model.ImgUrl"
+                                style="height: 200px"
+                                alt="product"
+                            />
+                        </a>
+                    </div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Title</h5>
+                    <p class="card-text">@Model.Price UAH</p>
+                    <div
+                        class="btn btn-primary"
+                    >
+                        Add to cart
+                    </div>
+                </div>
+            </div>
+        </div>
